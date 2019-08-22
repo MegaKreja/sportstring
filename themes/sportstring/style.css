@@ -58,20 +58,41 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background-color: #f79e2a;
 }
 
+.infoHeader p,
+.infoHeader i {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.addressInfo {
+  background-color: #e2871c;
+}
+
 .addressInfo,
 .phoneInfo {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding: 0 1% 0 1%;
 }
 
 .timeInfo {
   font-family: 'Arimo', sans-serif;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 0 1% 0 1%;
 }
 
-.infoHeader p,
-.infoHeader i {
-  color: white;
+.timeInfo i {
+  display: inline-block;
+}
+
+.timeInfo div {
+  display: inline-block;
+  margin: 0;
 }
 
 .timeInfo,
@@ -79,6 +100,78 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background-color: #fbaf41;
 }
 
-.addressInfo {
-  background-color: #e2871c;
+.logo {
+  width: 250px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.nav-items {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 14px;
+}
+
+.nav-items li:after {
+  /* content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 1px; */
+}
+
+.nav-items li {
+  position: relative;
+  border-right: 1px solid #9a9a9a;
+  width: 100px;
+  height: 100px;
+}
+
+.nav-items a {
+  color: #9a9a9a;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-items a:hover {
+  background-color: #f99e29;
+  color: white;
+}
+
+#menu-nav-menu .menu-item .menu-image-hover-wrapper {
+  padding-right: 0 !important;
+}
+
+/* #menu-nav-menu .menu-item .hovered-image {
+  padding-right: 0 !important;
+} */
+
+.nav-items span {
+  display: block;
+}
+
+.nav-items img {
+  display: block;
+}
+
+.current-menu-item a {
+  background-color: #f99e29;
+  color: white;
+}
+
+.current-menu-item a .menu-image {
+  opacity: 0;
+}
+
+.current-menu-item a .menu-image-title-after.hovered-image {
+  opacity: 1 !important;
 }

@@ -32,21 +32,35 @@
 	<div class="infoHeader row">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2 addressInfo">
-					<p><i class="fas fa-home"></i>367 Canning Hwy, Palmyra WA 6157</p>
+				<div class="addressInfo">
+					<p><img src="<?php echo wp_get_attachment_image_src( 80, 'full', false )[0]  ?>" alt="home"></i>367 Canning Hwy, Palmyra WA 6157</p>
 				</div>
-				<div class="col-lg-2 phoneInfo">
-					<p><i class="fas fa-phone clas"></i>(08) 9438 2400</p>
+				<div class="phoneInfo">
+					<p><img src="<?php echo wp_get_attachment_image_src( 81, 'full', false )[0]  ?>" alt="">(08) 9438 2400</p>
 				</div>
-				<div class="col-lg-6">
+				<div class="timeInfo ml-auto">
+					<img src="<?php echo wp_get_attachment_image_src( 88, 'full', false )[0]  ?>" alt="">
+					<div>
+						<p>Mon - Fri | <i>7:00 AM - 7:00 PM</i></p>
+						<p>Saturday  | <i>8:00 AM - 1:00 PM</i></p>
+					</div>
 				</div>
-				<div class="col-lg-2 timeInfo">
-					<i class="fas fa-clock"></i>
-					<p>Mon - Fri | <i>7:00 AM - 7:00 PM</i></p>
-					<p>Saturday  | <i>8:00 AM - 1:00 PM</i></p>
-				</div>
-				</div>
+			</div>
 		</div>
+	</div>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light content-area row">
+			<a class="navbar-brand" href="#"><img class="logo" src="<?php echo wp_get_attachment_image_src( 5, 'full', false )[0]  ?>" alt=""></a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+					<?php wp_nav_menu(array('menu_class' => 'nav navbar-nav navbar-right nav-items')); ?>
+				</div>
+			</div>
+		</nav>
 	</div>
 	
 	<div id="content" class="site-content">
