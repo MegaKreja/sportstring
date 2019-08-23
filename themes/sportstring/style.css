@@ -259,3 +259,57 @@ video {
   flex-direction: column;
   height: 80px;
 }
+
+.location-info {
+  font-family: 'Montserrat', sans-serif;
+  /* min-height: 100vh; */
+}
+
+.location-info h1 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.location-info p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.location-info h4 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.location-info .btn {
+  border-radius: 20px;
+  color: white;
+  background-color: #f9a02c;
+  margin: 0 auto;
+  display: block;
+  font-size: 18px;
+  display: inline-block;
+  width: 200px;
+}
+
+.location-info .btn.green {
+  background-color: #19b17e;
+}
+
+.gmp_map_opts {
+  position: absolute;
+}
+
+.gmp_MapPreview {
+  height: 1500px;
+}
+
+.location-info-text {
+  width: 700px;
+  height: 800px;
+  text-align: center;
+  /* position: absolute; */
+  background-color: white;
+  margin: 10% 0 10% 10%;
+  padding: 10%;
+  z-index: 10;
+}
