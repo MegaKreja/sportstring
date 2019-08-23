@@ -56,6 +56,8 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<!-- <img class="hidden-desktop" src="<?php echo wp_get_attachment_image_src( 80, 'full', false )[0]  ?>" alt="home">
+				<img class="hidden-desktop" src="<?php echo wp_get_attachment_image_src( 88, 'full', false )[0]  ?>" alt=""> -->
 				<div class="navbar-nav ml-auto">
 					<?php wp_nav_menu(array('menu_class' => 'nav navbar-nav navbar-right nav-items')); ?>
 				</div>

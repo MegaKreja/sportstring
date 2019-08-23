@@ -125,7 +125,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .nav-items li {
   position: relative;
-  border-right: 1px solid #9a9a9a;
+  /* border-right: 1px solid #9a9a9a; */
   width: 100px;
   height: 100px;
 }
@@ -174,4 +174,88 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .current-menu-item a .menu-image-title-after.hovered-image {
   opacity: 1 !important;
+}
+
+.video-container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-container .welcome-text {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.welcome-text h1 {
+  font-size: 48px;
+}
+
+.video-container .btn {
+  border-radius: 20px;
+  color: white;
+  background-color: #f9a02c;
+  margin: 0 auto;
+  display: block;
+  font-size: 18px;
+}
+
+.video-container .btn:hover {
+  transition: 0.5s;
+  transform: scale(1.1) perspective(1px);
+}
+
+.welcome-buttons {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.welcome-btn {
+  display: inline-block;
+  width: 100px;
+  height: 80px;
+  background-color: #19b17e;
+  border-radius: 10px;
+}
+
+.welcome-btn:hover {
+  transition: 0.5s;
+  transform: scale(1.05) perspective(1px);
+}
+
+.welcome-btn img {
+  width: 38px;
+}
+
+.welcome-buttons h2 {
+  font-size: 18px;
+  color: white;
+}
+
+.welcome-btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80px;
 }

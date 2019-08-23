@@ -6,7 +6,6 @@
  *
  * @package sportstring
  */
-
 if ( ! function_exists( 'sportstring_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
