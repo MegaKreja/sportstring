@@ -89,7 +89,7 @@ get_header();
 		<?php query_posts(array(
 			'post_type' => 'our_team_front'
 		)); ?>
-		<div class="team-images">
+		<div class="team-images row">
 			<?php
 				while (have_posts()) : the_post(); $image = get_field('profile-img'); ?>
 					<div class="team-member">

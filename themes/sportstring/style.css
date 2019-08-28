@@ -54,6 +54,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   padding: 0;
 }
 
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transition: 0.2s;
+  transform: scale(1.1) perspective(1px);
+  color: white;
+}
+
 .infoHeader {
   background-color: #f79e2a;
 }
@@ -114,15 +130,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   font-size: 14px;
 }
 
-.nav-items li:after {
-  /* content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50%;
-  width: 1px; */
-}
-
 .nav-items li {
   position: relative;
   /* border-right: 1px solid #9a9a9a; */
@@ -150,10 +157,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 #menu-nav-menu .menu-item .menu-image-hover-wrapper {
   padding-right: 0 !important;
 }
-
-/* #menu-nav-menu .menu-item .hovered-image {
-  padding-right: 0 !important;
-} */
 
 .nav-items span {
   display: block;
@@ -208,17 +211,8 @@ video {
 }
 
 .video-container .btn {
-  border-radius: 20px;
-  color: white;
   background-color: #f9a02c;
-  margin: 0 auto;
-  display: block;
   font-size: 18px;
-}
-
-.video-container .btn:hover {
-  transition: 0.2s;
-  transform: scale(1.1) perspective(1px);
 }
 
 .welcome-buttons {
@@ -280,15 +274,9 @@ video {
 }
 
 .location-info .btn {
-  border-radius: 20px;
-  color: white;
   background-color: #f9a02c;
-  margin: 0 auto;
-  display: block;
   font-size: 18px;
   display: inline-block;
-  width: 200px;
-  font-weight: bold;
 }
 
 .location-info .btn.green {
@@ -332,16 +320,10 @@ video {
 }
 
 .about-us .btn {
-  border-radius: 20px;
   border: 2px solid white;
-  color: white;
   background-color: #f9a02c;
-  margin: 0 auto;
-  display: block;
   font-size: 18px;
   display: inline-block;
-  width: 200px;
-  font-weight: bold;
 }
 
 .meet-our-team {
@@ -363,20 +345,14 @@ video {
 }
 
 .meet-our-team .btn {
-  border-radius: 20px;
-  color: white;
   background-color: #00a99d;
   border: 2px solid white;
-  margin: 0 auto;
-  display: block;
   font-size: 18px;
   display: inline-block;
-  width: 200px;
-  font-weight: bold;
 }
 
 .team-images {
-  margin-top: 5%;
+  margin-top: 10%;
   display: block;
   font-family: 'Montserrat', sans-serif;
 }
@@ -402,20 +378,30 @@ video {
   transition: 0.5s;
 }
 
-.slick-active img {
+.slick-slide img,
+.slick-slide .btn {
   display: block;
-  visibility: visible;
   opacity: 0.5;
-  width: 200px;
+  /* width: 200px; */
   transition: 0.5s;
 }
 
-.slick-current img {
+.slick-slide h1,
+.slick-slide p {
+  opacity: 0.5;
+}
+
+.slick-current img,
+.slick-current .btn {
   display: block;
-  visibility: visible;
-  width: 300px;
+  /* width: 300px; */
   opacity: 1;
   transition: 0.5s;
+}
+
+.slick-current h1,
+.slick-current p {
+  opacity: 1;
 }
 
 .team-images .team-member img {
@@ -429,14 +415,43 @@ video {
 }
 
 .team-images .team-member .btn {
-  border-radius: 20px;
   border: 2px solid white;
-  color: white;
   background-color: #f9a02c;
-  margin: 0 auto;
-  display: block;
   font-size: 18px;
   display: inline-block;
-  width: 200px;
-  font-weight: bold;
+}
+
+.slick-dots {
+  list-style: none;
+}
+
+.slick-dots li {
+  display: inline;
+  margin: 1%;
+}
+
+.slick-dots li button {
+  background-color: #fff;
+  font-size: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b9b9b9;
+}
+
+.slick-dots li button:hover {
+  box-shadow: 0 0 0 3px #9c9c9c;
+  transition: 0.2s;
+}
+
+.slick-dots .slick-active {
+}
+
+.slick-dots .slick-active button {
+  background: #f9a02c;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 6px #b0b0b0;
+}
+
+.slick-dots .slick-active button:hover {
+  box-shadow: 0 0 0 5px #fff, 0 0 0 6px #b0b0b0;
 }

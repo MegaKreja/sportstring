@@ -2,8 +2,10 @@ $('.team-images').slick({
   // autoplay: true,
   // autoplaySpeed: 4000,
   dots: true,
+  arrows: false,
+  focusOnSelect: true,
   centerMode: true,
-  centerPadding: '60px',
+  // centerPadding: '60px',
   slidesToShow: 3,
   responsive: [
     {
