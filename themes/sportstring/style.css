@@ -426,6 +426,7 @@ video {
 
 .slick-dots {
   list-style: none;
+  margin: 0;
 }
 
 .slick-dots li {
@@ -482,6 +483,7 @@ video {
 
 .our-products {
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .our-products button {
@@ -499,4 +501,55 @@ video {
   font-weight: 500;
   font-size: 36px;
   color: #000;
+}
+
+.footer {
+  background-color: #fb9d29;
+  padding-top: 5%;
+  display: block;
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+}
+
+.footer .logo {
+  margin: 0 auto;
+  width: 250px;
+}
+
+.footer .footer-links {
+  padding-top: 5%;
+}
+
+.footer .footer-links a {
+  display: block;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.social-links img {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.partners-wrapper {
+  background-color: white;
+}
+
+.footer h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 0;
 }
