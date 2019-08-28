@@ -52,7 +52,7 @@ get_header();
 		</div>
 
 		<div class="location-info row">
-			<?php echo do_shortcode( '[google_map_easy id="1" extra_class_classes="location-info-map"]' ) ?>
+			<?php echo do_shortcode( '[google_map_easy id="1"]' ) ?>
 			<div class="location-info-text">
 				<img class="logo" src="<?php echo wp_get_attachment_image_src( 5, 'full', false )[0]  ?>" alt="">
 				<h1>Welcome to Sportreat</h1>
@@ -62,6 +62,44 @@ get_header();
 				<button type="button" class="btn green">CALL NOW</button>
 				<button type="button" class="btn">EMAIL</button>
 			</div>
+		</div>
+
+		<div style="background-image: url(<?php echo wp_get_attachment_image_src( 104, 'full', false )[0]  ?>); background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;" class="about-us row">
+			<div class="container about-us-text">
+				<img src="<?php echo wp_get_attachment_image_src( 91, 'full', false )[0]  ?>" alt="">
+				<h1>About Us</h1>
+				<p>The unique Sportreat multidisciplinary sports medicine facility, officially opened on the 10th August 2008 and has since maintained its sparkle and mastery in sports medicine and physio…</p>
+				<button type="button" class="btn">FIND OUT MORE</button>
+			</div>
+		</div>
+
+		<div style="background-image: url(<?php echo wp_get_attachment_image_src( 105, 'full', false )[0]  ?>); background-repeat: no-repeat;
+  background-size: 100% 100%;" class="meet-our-team row">
+			<div class="container about-us-text">
+				<img src="<?php echo wp_get_attachment_image_src( 106, 'full', false )[0]  ?>" alt="">
+				<h1>Meet Our Team</h1>
+				<p>Sportreat & TotaLife Care is a dynamic Sports Medicine Practice with a fun, energetic allied health team dedicated to helping you achieve the best results possible.</p>
+				<button type="button" class="btn">READ MORE</button>
+			</div>
+		</div>
+		
+		<?php query_posts(array(
+			'post_type' => 'our_team_front'
+		)); ?>
+		<div class="team-images">
+			<?php
+				while (have_posts()) : the_post(); $image = get_field('profile-img'); ?>
+					<div class="team-member">
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<h1><?php the_field('name'); ?></h1>
+						<p><?php the_field('title'); ?></p>
+						<button class="btn" href="<?php the_field('url'); ?>">READ MORE</button>
+					</div>
+				<?php endwhile; 
+			?>
 		</div>
 	</div><!-- #primary -->
 
