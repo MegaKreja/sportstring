@@ -351,7 +351,8 @@ video {
   display: inline-block;
 }
 
-.team-images {
+.team-images,
+.our-products {
   margin-top: 10%;
   display: block;
   font-family: 'Montserrat', sans-serif;
@@ -369,11 +370,13 @@ video {
   color: #b9b9b9;
 }
 
-.team-images {
+.team-images,
+.our-products {
   text-align: center;
 }
 
-.team-member {
+.team-member,
+.product {
   opacity: 1;
   transition: 0.5s;
 }
@@ -444,14 +447,56 @@ video {
   transition: 0.2s;
 }
 
-.slick-dots .slick-active {
-}
-
 .slick-dots .slick-active button {
   background: #f9a02c;
   box-shadow: 0 0 0 5px #fff, 0 0 0 6px #b0b0b0;
 }
 
 .slick-dots .slick-active button:hover {
+  background: #f9a02c;
+  /* outline: 3px solid red; */
   box-shadow: 0 0 0 5px #fff, 0 0 0 6px #b0b0b0;
+  /* border: 1px solid #b9b9b9; */
+}
+
+.our-products .slick-dots .slick-active button {
+  background-color: #0eae8c;
+}
+
+.our-products .slick-dots .slick-active button:hover {
+  background-color: #0eae8c;
+}
+
+.our-products {
+  background-color: #f0f0f0;
+}
+
+.product .product-img {
+  background-color: #0eae8c;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
+
+.our-products {
+  padding-top: 5%;
+}
+
+.our-products button {
+  border: 2px solid white;
+  background-color: #f9a02c;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.our-products p {
+  color: #9f9f9f;
+}
+
+.our-products h1 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #000;
 }

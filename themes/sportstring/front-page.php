@@ -101,6 +101,23 @@ get_header();
 				<?php endwhile; 
 			?>
 		</div>
+		
+		<div class="our-products row">
+			<h1>Our Products</h1>
+			<div class="products">
+				<?php
+				for($i=0; $i<5; $i++){
+						echo 
+						'<div class="product">
+							<div class="product-img"></div>
+							<button class="btn" href="">VIEW MORE</button>
+							<p>Lorem Ipsum</p>
+						</div>';
+				}
+				?>
+			</div>
+		</div>
+		
 	</div><!-- #primary -->
 
 <?php
