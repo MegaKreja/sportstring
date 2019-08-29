@@ -31,7 +31,7 @@
 
 <body <?php body_class(); ?>>
 <div class="container-fluid" id="page" class="site">
-	<div class="infoHeader row">
+	<div class="infoHeader row d-none d-lg-block">
 		<div class="container">
 			<div class="row">
 				<div class="addressInfo">

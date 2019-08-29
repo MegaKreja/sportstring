@@ -15,7 +15,7 @@
 get_header();
 ?>
 	<div id="primary" class="content-area">
-		<div class="video-container row welcome">
+		<div class="video-container row welcome d-none d-lg-block">
 				<video autoplay muted loop>
 						<source src="http://localhost/sportstring/wp-content/uploads/2019/08/welcome.mp4" type="video/mp4">
 				</video>
@@ -52,7 +52,7 @@ get_header();
 		</div>
 
 		<div class="location-info row">
-			<?php echo do_shortcode( '[google_map_easy id="1"]' ) ?>
+			<?php echo do_shortcode('[google_map_easy id="1"]')?>
 			<div class="location-info-text">
 				<img class="logo" src="<?php echo wp_get_attachment_image_src( 5, 'full', false )[0]  ?>" alt="">
 				<h1>Welcome to Sportreat</h1>
@@ -93,7 +93,7 @@ get_header();
 			<?php
 				while (have_posts()) : the_post(); $image = get_field('profile-img'); ?>
 					<div class="team-member">
-						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						<h1><?php the_field('name'); ?></h1>
 						<p><?php the_field('title'); ?></p>
 						<button class="btn" href="<?php the_field('url'); ?>">READ MORE</button>

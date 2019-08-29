@@ -49,11 +49,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Document
 	 ========================================================================== */
 
+/* All */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Global Buttons */
 .btn {
   font-family: 'Montserrat', sans-serif;
   border-radius: 20px;
@@ -70,6 +72,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: white;
 }
 
+/* Header before real header with info */
 .infoHeader {
   background-color: #f79e2a;
 }
@@ -116,6 +119,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background-color: #fbaf41;
 }
 
+/* Header */
 .logo {
   width: 250px;
 }
@@ -178,6 +182,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .current-menu-item a .menu-image-title-after.hovered-image {
   opacity: 1 !important;
 }
+
+/* Front Page */
+/* Section with video in the middle */
 
 .video-container {
   height: 100vh;
@@ -254,6 +261,8 @@ video {
   height: 80px;
 }
 
+/* Section with map */
+
 .location-info {
   font-family: 'Montserrat', sans-serif;
 }
@@ -297,6 +306,32 @@ video {
   z-index: 10;
 }
 
+.gmpInfoWindowtitle {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #000 !important;
+  font-weight: 500 !important;
+  font-size: 24px !important;
+}
+
+.contact-details-list a {
+  color: #9c9c9c !important;
+  font-style: italic !important;
+  font-size: 18px !important;
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 992px) {
+  .gmp_map_opts {
+    display: none;
+  }
+
+  .location-info-text {
+    position: inherit;
+  }
+}
+
+/* About Us section */
+
 .about-us {
   text-align: center;
   display: block;
@@ -326,6 +361,8 @@ video {
   display: inline-block;
 }
 
+/* Meet our team with triangular div section */
+
 .meet-our-team {
   display: block;
   padding: 10%;
@@ -350,6 +387,8 @@ video {
   font-size: 18px;
   display: inline-block;
 }
+
+/* Sections with image sliders */
 
 .team-images,
 .our-products {
@@ -503,6 +542,8 @@ video {
   color: #000;
 }
 
+/* Footer */
+
 .footer {
   background-color: #fb9d29;
   padding-top: 5%;
@@ -552,4 +593,134 @@ video {
   padding-top: 3%;
   padding-bottom: 3%;
   margin: 0;
+}
+
+/* About Us Page */
+
+/* Health-care offerings section */
+
+.about-us-triangle {
+  display: block;
+  padding: 10%;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.about-us-triangle h1 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #f79523;
+  padding-top: 5%;
+}
+
+.health-care-info {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0eeef;
+  z-index: -1;
+}
+
+.health-care-info h1 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #f79523;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.health-care-logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.health-care-info p,
+.health-care-info a {
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+  padding-top: 2%;
+}
+
+.health-care-info a {
+  padding-top: 2%;
+  text-align: left !important;
+}
+
+.health-care-info span {
+  color: #f79523;
+  font-weight: bold;
+}
+
+.health-care-offerings {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.hide-image {
+  opacity: 0;
+}
+
+/* Health care benefits section */
+
+.health-matters {
+  background-color: #0eae8a;
+  display: block;
+  padding: 10%;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.health-matters h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+  padding-top: 3%;
+}
+
+.health-benefits {
+  display: block;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.health-benefits h1 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #f79523;
+  padding-top: 3%;
+}
+
+.benefit {
+  padding: 5% 10% 5% 10%;
+}
+
+/* About Us page contact section */
+
+.health-care-contact {
+  background-color: #f0eeef;
+  display: block;
+  padding: 10%;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.health-care-contact h1 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #626262;
+  padding-top: 3%;
+}
+
+.health-care-contact .btn {
+  margin-top: 3%;
+  background-color: #f9a02c;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.health-care-contact .btn.green {
+  background-color: #00a99d;
 }

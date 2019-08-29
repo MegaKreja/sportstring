@@ -5,7 +5,7 @@ Plugin URI: https://supsystic.com/plugins/google-maps-plugin
 Donate link: https://supsystic.com/plugins/google-maps-plugin
 Tags: google map, map, Google Maps, map markers, location
 Tested up to: 5.2
-Stable tag: 1.9.20
+Stable tag: 1.9.21
 
 Google Maps with markers, locations and clusterization, KML layers and filters. Custom Google map markers with text, images, videos, links.
 
@@ -293,6 +293,10 @@ Google Maps Easy plugin admin area. Add a marker to the google map.
 
 
 == Changelog ==
+
+= Google Map Plugin v1.9.21 / 28.08.2019 =
+ * Language switch notice fix
+ * Small code fixes
 
 = Google Map Plugin v1.9.20 / 30.07.2019 =
  * Fixed direction form positions issue

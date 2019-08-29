@@ -43,9 +43,7 @@ $('.products').slick({
       breakpoint: 768,
       settings: {
         arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+        centerMode: true
       }
     },
     {
@@ -53,7 +51,6 @@ $('.products').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
         slidesToShow: 1
       }
     }
