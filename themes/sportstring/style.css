@@ -697,9 +697,9 @@ video {
   padding: 5% 10% 5% 10%;
 }
 
-/* About Us page contact section */
+/* Contact section below footer section */
 
-.health-care-contact {
+.nearfooter-contact {
   background-color: #f0eeef;
   display: block;
   padding: 10%;
@@ -707,20 +707,43 @@ video {
   text-align: center;
 }
 
-.health-care-contact h1 {
+.nearfooter-contact h1 {
   font-weight: bold;
   font-size: 24px;
   color: #626262;
   padding-top: 3%;
 }
 
-.health-care-contact .btn {
+.nearfooter-contact .btn {
   margin-top: 3%;
   background-color: #f9a02c;
   font-size: 18px;
   display: inline-block;
 }
 
-.health-care-contact .btn.green {
+.nearfooter-contact .btn.green {
   background-color: #00a99d;
+}
+
+/* Our Team Page */
+
+/* Our Team Page Profiles */
+
+.our-team-triangle {
+  display: block;
+  padding: 10%;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.our-team-triangle h1 {
+  font-weight: bold;
+  font-size: 36px;
+  padding-top: 3%;
+}
+
+.our-team-triangle p {
+  font-weight: 300;
+  font-size: 18px;
 }

@@ -7,7 +7,7 @@ get_header();?>
   background-repeat: no-repeat;
   background-size: cover;" class="about-us row">
   <div class="container about-us-text">
-    <img src="<?php echo wp_get_attachment_image_src( 91, 'full', false )[0]  ?>" alt="">
+    <img src="<?php echo wp_get_attachment_image_src( 197, 'full', false )[0]  ?>" alt="">
     <h1>About Us</h1>
   </div>
 </div>
@@ -100,7 +100,7 @@ get_header();?>
   </div>
 </div>
 
-<div class="health-care-contact row">
+<div class="nearfooter-contact row">
   <h1>Contact us today to see how we can help!</h1>
   <button type="button" class="btn green">CALL NOW</button>
   <button type="button" class="btn">EMAIL</button>

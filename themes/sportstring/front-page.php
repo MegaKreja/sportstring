@@ -69,7 +69,7 @@ get_header();
   background-repeat: no-repeat;
   background-size: cover;" class="about-us row">
 			<div class="container about-us-text">
-				<img src="<?php echo wp_get_attachment_image_src( 91, 'full', false )[0]  ?>" alt="">
+				<img src="<?php echo wp_get_attachment_image_src( 197, 'full', false )[0]  ?>" alt="">
 				<h1>About Us</h1>
 				<p>The unique Sportreat multidisciplinary sports medicine facility, officially opened on the 10th August 2008 and has since maintained its sparkle and mastery in sports medicine and physio…</p>
 				<button type="button" class="btn">FIND OUT MORE</button>
