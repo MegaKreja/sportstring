@@ -21,18 +21,21 @@ get_header();?>
     <?php
       while (have_posts()) : the_post(); 
       $image = get_field('profile-img');
-      // $desc = substr(the_field('description'), 30) ?>
-        <?php 
-        if($image) { ?>
+      $desc = substr(get_field('description'), 0, 200) ?>
+        
           <div class="all-team-member col">
-            <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-            <h1><?php the_field('name'); ?></h1>
-            <span><?php the_field('title'); ?></span>
-            <hr>
-            <p><?php the_field('description'); ?></p>
-            <button class="btn" href="<?php the_field('url'); ?>">READ MORE</button>
-          </div> 
-        <?php } ?>  
+          <?php 
+            if($image) { ?>
+            <a href="<?php echo get_permalink(); ?>">
+              <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+              <h1><?php the_field('name'); ?></h1>
+              <span><?php the_field('title'); ?></span>
+            </a>
+              <hr>
+              <p><?php echo $desc ?>...</p>
+              <button class="btn" href="<?php the_field('url'); ?>">READ MORE</button>
+              <?php } ?>
+          </div>        
       <?php endwhile; 
     ?>
   </div>

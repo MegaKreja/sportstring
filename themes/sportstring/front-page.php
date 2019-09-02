@@ -87,7 +87,9 @@ get_header();
 		</div>
 		
 		<?php query_posts(array(
-			'post_type' => 'our_team_front'
+			'post_type' => 'our_team_all',
+  		'orderby'   => 'date',
+  		'order' => 'ASC',
 		)); ?>
 		<div class="team-images row">
 			<?php
@@ -96,7 +98,7 @@ get_header();
 						<img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						<h1><?php the_field('name'); ?></h1>
 						<p><?php the_field('title'); ?></p>
-						<button class="btn" href="<?php the_field('url'); ?>">READ MORE</button>
+						<a href="<?php echo get_permalink(); ?>"><button class="btn" >READ MORE</button></a>
 					</div>
 				<?php endwhile; 
 			?>
