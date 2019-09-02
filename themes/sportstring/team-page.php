@@ -16,21 +16,27 @@ get_header();?>
   'orderby'   => 'date',
   'order' => 'ASC',
 )); ?>
-<div class="all-team-images row">
-  <?php
-    while (have_posts()) : the_post(); 
-    $image = get_field('profile-img');
-    // $desc = substr(the_field('description'), 30) ?>
-      <div class="all-team-member col">
-        <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-        <h1><?php the_field('name'); ?></h1>
-        <p><?php the_field('title'); ?></p>
-        <p><?php the_field('description'); ?></p>
-        <button class="btn" href="<?php the_field('url'); ?>">READ MORE</button>
-      </div>
-    <?php endwhile; 
-  ?>
-</div>
+<!-- <div class="container"> -->
+  <div class="all-team-images row">
+    <?php
+      while (have_posts()) : the_post(); 
+      $image = get_field('profile-img');
+      // $desc = substr(the_field('description'), 30) ?>
+        <?php 
+        if($image) { ?>
+          <div class="all-team-member col">
+            <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+            <h1><?php the_field('name'); ?></h1>
+            <span><?php the_field('title'); ?></span>
+            <hr>
+            <p><?php the_field('description'); ?></p>
+            <button class="btn" href="<?php the_field('url'); ?>">READ MORE</button>
+          </div> 
+        <?php } ?>  
+      <?php endwhile; 
+    ?>
+  </div>
+<!-- </div> -->
 
 <div class="nearfooter-contact row">
   <h1>Contact us today to see how we can help!</h1>

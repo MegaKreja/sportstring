@@ -747,3 +747,38 @@ video {
   font-weight: 300;
   font-size: 18px;
 }
+
+.all-team-images {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.all-team-images h1 {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 3%;
+}
+
+.all-team-images span {
+  font-weight: 300;
+  font-size: 14px;
+  color: #9f9f9f;
+  font-style: italic;
+  /* height: 50px;
+  border-bottom: 1px solid #969696; */
+}
+
+.all-team-images p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #9f9f9f;
+}
+
+.all-team-images img {
+  border-radius: 50%;
+  border: 10px solid white;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
