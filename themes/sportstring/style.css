@@ -834,3 +834,44 @@ video {
   font-size: 14px;
   color: #9f9f9f;
 }
+
+/* Services Page */
+.our-services {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.our-services-triangle {
+  display: block;
+  padding: 10%;
+}
+
+.our-services-triangle h1 {
+  font-weight: 500;
+  font-size: 36px;
+  padding-top: 3%;
+}
+
+.services-links {
+  padding-top: 5%;
+}
+
+.services-links .service {
+  width: 270px;
+  height: 270px;
+  margin: 3% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services-links h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
