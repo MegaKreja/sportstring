@@ -158,6 +158,29 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: white;
 }
 
+.menu-item-has-children ul li {
+  z-index: 100;
+  height: 40px;
+  list-style: none;
+  line-height: 40px;
+  /* display: none; */
+}
+/* 
+.menu-item-has-children:hover {
+  display: block;
+} */
+
+.menu-item-has-children ul li a {
+  display: block;
+  background-color: #f3f3f4;
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+  font-size: 14px;
+  height: 40px;
+  border-bottom: 1px solid #fff;
+  color: #9a9a9a;
+}
+
 #menu-nav-menu .menu-item .menu-image-hover-wrapper {
   padding-right: 0 !important;
 }
@@ -874,4 +897,245 @@ video {
   font-weight: bold;
   font-size: 18px;
   color: #fff;
+}
+
+.service:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01, 1.01);
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+/* Faqs page */
+.faqs-nearfooter {
+  background-color: #fff;
+}
+
+.faqs-intro {
+  text-align: center;
+  display: block;
+  padding: 10% 0 30% 0;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.faqs-intro img {
+  width: 50px;
+}
+
+.faqs-intro h1 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.faqs-intro p {
+  font-weight: 300;
+  font-size: 18px;
+  padding: 0 20% 0 20%;
+}
+
+/* Faqs form */
+
+.faqs-form-wrapper {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background-color: #f0eeef;
+}
+
+.faqs-form {
+  transform: translateY(-50%);
+  /* margin-top: -300px; */
+  background-color: #fff;
+  padding: 5% 10% 5% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 70%; */
+}
+
+.faqs-form p {
+  color: #9f9f9f;
+}
+
+.faqs-form input,
+.faqs-form select {
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  /* width: 100%; */
+  margin-top: 3%;
+}
+
+.faqs-form select {
+  background: #0aad8e;
+  color: #fff;
+}
+
+.faqs-form textarea {
+  width: 100%;
+  margin-top: 3%;
+  border: 1px solid #9f9f9f;
+}
+
+.wpcf7-submit {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px !important;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  width: 128px;
+  height: 48px;
+  font-weight: bold;
+  background-color: #00a99d;
+  font-size: 18px;
+}
+
+.wpcf7-submit:hover {
+  transition: 0.2s;
+  transform: scale(1.1) perspective(1px);
+  color: white;
+}
+
+.faqs-form select {
+  margin-top: 5%;
+}
+
+.faqs-form .radio-buttons {
+  display: inherit;
+  margin-top: 3%;
+}
+
+.faqs-form input:checked ~ span.wpcf7-list-item-label {
+  color: #0aad8e;
+}
+
+/* Featured Questions */
+.featQuestions {
+  background-color: #f0eeef;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.featQuestions h1 {
+  color: #0aad8e;
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.featQuestions .box {
+  border: 10px solid transparent;
+  background-clip: padding-box;
+}
+
+.select-ctg {
+  background-color: white;
+  padding: 5%;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.select-ctg img {
+  width: 15%;
+}
+
+.select-ctg h1 {
+  color: #f79b28;
+  font-size: 24px;
+}
+
+.select-ctg .categories {
+  list-style-type: none;
+}
+
+.select-ctg .categories li {
+  padding: 2%;
+  color: #9f9f9f;
+  font-size: 18px;
+}
+
+.select-ctg .categories li:hover {
+  font-weight: bold;
+  background-color: #00a99d;
+  color: white;
+  border-radius: 20px;
+}
+
+.select-ctg .categories .active {
+  font-weight: bold;
+  background-color: #00a99d;
+  color: white;
+  border-radius: 20px;
+}
+
+.select-questions {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 600px;
+}
+
+.select-questions .questions {
+  list-style-type: none;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.select-questions .questions li {
+  background-color: #f0eeef;
+  color: #f79b28;
+  font-weight: bold;
+  text-align: left;
+  border: 1px solid #9f9f9f;
+}
+
+.select-questions .questions .questions-info-wrap {
+  border-top: 1px solid #9f9f9f;
+  padding: 5%;
+  display: none;
+}
+
+.select-questions .active {
+  display: block;
+}
+
+.select-questions .questions p {
+  color: #9f9f9f;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.select-questions .question-info {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 30px;
+  line-height: 30px;
+}
+
+.select-questions .question-info .likeButton {
+  font-weight: bold;
+  background-color: #00a99d;
+  color: white;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.select-questions .question-info img {
+  width: 20px;
+  height: 20px;
+}
+
+.select-questions .question-info .therapistName {
+  color: #00a99d;
+  font-size: 12px;
+}
+
+.select-questions .question-info .therapist,
+.select-questions .question-info .time {
+  display: -webkit-box;
 }

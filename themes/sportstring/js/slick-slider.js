@@ -56,3 +56,40 @@ $('.products').slick({
     }
   ]
 });
+
+$(document).ready(function() {
+  if (!$(this).hasClass('current-menu-item')) {
+    // check if current page
+    $(this)
+      .find('.sub-menu')
+      .hide(); // hide if not current page
+  }
+});
+
+$('li.menu-item').hover(
+  function() {
+    // mouse enter
+    $(this)
+      .find(' > .sub-menu')
+      .show(); // display immediate child
+  },
+  function() {
+    // mouse leave
+    // if (!$(this).hasClass('current-menu-item')) {
+    // check if current page
+    $(this)
+      .find('.sub-menu')
+      .hide(); // hide if not current page
+    // }
+  }
+);
+
+$(document).on('click', '.categories li', function() {
+  $('.categories li').removeClass('active');
+  $(this).addClass('active');
+});
+
+$(document).on('click', '.questions li', function() {
+  $('.questions li .questions-info-wrap').removeClass('active');
+  $('.questions li .questions-info-wrap').addClass('active');
+});
