@@ -1096,7 +1096,7 @@ video {
   display: none;
 }
 
-.select-questions .active {
+.select-questions .questions-info-wrap.active {
   display: block;
 }
 
@@ -1122,7 +1122,7 @@ video {
   color: white;
   border-radius: 20px;
   margin: 0;
-  padding: 0;
+  padding: 0 3% 0 3%;
 }
 
 .select-questions .question-info img {
@@ -1139,3 +1139,145 @@ video {
 .select-questions .question-info .time {
   display: -webkit-box;
 }
+
+/* Resources Page */
+.resources-nearfooter {
+  background-color: #fff;
+}
+
+.resources-intro {
+  text-align: center;
+  display: block;
+  padding: 10%;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.resources-intro img {
+  width: 50px;
+}
+
+.resources-intro h1 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.resources-main {
+  font-family: 'Montserrat', sans-serif;
+  padding: 5% 0 5% 0;
+  background-color: #f0eeef;
+}
+
+.resources-main .right h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.resources-main .right img {
+  display: block;
+  margin: auto;
+}
+
+.resources-main .categories {
+  list-style-type: none;
+}
+
+.resources-main .categories li {
+  padding: 2%;
+  color: #9f9f9f;
+  font-size: 18px;
+  text-align: center;
+}
+
+.resources-main .categories li:hover {
+  font-weight: bold;
+  background-color: #00a99d;
+  color: white;
+  border-radius: 20px;
+}
+
+.resources-main .categories .active {
+  font-weight: bold;
+  background-color: #00a99d;
+  color: white;
+  border-radius: 20px;
+}
+
+.resources-main .post-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.resources-main .post-image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.resources-main .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resources-main .post-text h2 {
+  font-size: 18px;
+}
+
+.resources-main .time img {
+  width: 20px;
+  height: 20px;
+}
+
+.resources-main .post-text .time {
+  text-align: center;
+}
+
+.resources-main .time p,
+.resources-main .time img {
+  display: inline-block;
+}
+
+.resources-main .likeButton {
+  font-weight: bold;
+  background-color: #00a99d;
+  color: white;
+  border-radius: 20px;
+  padding: 0 3% 0 3%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.resources-main .left h1 {
+  font-size: 24px;
+}
+
+.resources-main .left .post {
+  background-color: #fff;
+  margin: 5%;
+  padding: 5%;
+}
+
+.resources-main .left .post {
+  color: #9f9f9f;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.resources-main .left .social-info img {
+  width: 20px;
+  height: 20px;
+}
+
+.resources-main .left .btn {
+  background-color: #f9a02c;
+  font-size: 18px;
+  display: inline-block;
+}
+
+/* Contact Us */

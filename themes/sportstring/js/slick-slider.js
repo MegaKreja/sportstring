@@ -89,7 +89,11 @@ $(document).on('click', '.categories li', function() {
   $(this).addClass('active');
 });
 
-$(document).on('click', '.questions li', function() {
-  $('.questions li .questions-info-wrap').removeClass('active');
-  $('.questions li .questions-info-wrap').addClass('active');
+$(document).ready(function() {
+  $('.questions li').click(function() {
+    $('.questions li .questions-info-wrap').removeClass('active');
+    $(this)
+      .children('.questions-info-wrap')
+      .addClass('active');
+  });
 });
