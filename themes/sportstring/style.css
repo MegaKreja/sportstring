@@ -344,7 +344,7 @@ video {
 }
 
 @media screen and (max-width: 992px) {
-  .gmp_map_opts {
+  .location-info .gmp_map_opts {
     display: none;
   }
 
@@ -595,12 +595,12 @@ video {
   text-decoration: underline;
 }
 
-.social-links {
+.footer .social-links {
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
-.social-links img {
+.footer .social-links img {
   border: 2px solid white;
   border-radius: 50%;
 }
@@ -1281,3 +1281,90 @@ video {
 }
 
 /* Contact Us */
+.contact {
+  background-color: #f0eeef;
+}
+
+.contact .contact-wrapper {
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+.contact .contact-form {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 5%;
+}
+
+.contact .contact-form .wpcf7-submit {
+  background-color: #5d9620;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contact .contact-form h3 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #9f9f9f;
+}
+
+.contact .contact-form input,
+.contact .contact-form select,
+.contact .contact-form textarea {
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  width: 100%;
+  margin-top: 3%;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contact .contact-form select {
+  background: #5d9620;
+  color: #fff;
+}
+
+.contact .contact-form textarea {
+  width: 100%;
+}
+
+.contact .contact-info {
+  background-color: #5d9620;
+  font-family: 'Arimo', sans-serif;
+  color: white;
+  padding: 5%;
+}
+
+.contact .contact-info h3 {
+  font-size: 18px;
+}
+
+.contact .contact-info p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contact .contact-info-email {
+  font-weight: bold;
+  background-color: #fff;
+  color: #9f9f9f;
+  border-radius: 20px;
+  margin: 0;
+  padding: 3% 3% 3% 3%;
+  text-align: center;
+  margin-top: 30%;
+}
+
+.contact .social-links {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+
+@media screen and (max-width: 992px) {
+  .contact .contact-wrapper {
+    background-color: #fff;
+    transform: none;
+  }
+}
