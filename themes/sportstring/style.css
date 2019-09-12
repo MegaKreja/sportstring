@@ -443,29 +443,29 @@ video {
   transition: 0.5s;
 }
 
-.slick-slide img,
-.slick-slide .btn {
+.front-page .slick-slide img,
+.front-page .slick-slide .btn {
   display: block;
   opacity: 0.5;
   /* width: 200px; */
   transition: 0.5s;
 }
 
-.slick-slide h1,
-.slick-slide p {
+.front-page .slick-slide h1,
+.front-page .slick-slide p {
   opacity: 0.5;
 }
 
-.slick-current img,
-.slick-current .btn {
+.front-page .slick-current img,
+.front-page .slick-current .btn {
   display: block;
   /* width: 300px; */
   opacity: 1;
   transition: 0.5s;
 }
 
-.slick-current h1,
-.slick-current p {
+.front-page .slick-current h1,
+.front-page .slick-current p {
   opacity: 1;
 }
 
@@ -486,17 +486,17 @@ video {
   display: inline-block;
 }
 
-.slick-dots {
+.front-page .slick-dots {
   list-style: none;
   margin: 0;
 }
 
-.slick-dots li {
+.front-page .slick-dots li {
   display: inline;
   margin: 1%;
 }
 
-.slick-dots li button {
+.front-page .slick-dots li button {
   background-color: #fff;
   font-size: 0;
   border-radius: 50%;
@@ -505,17 +505,17 @@ video {
   border: 1px solid #b9b9b9;
 }
 
-.slick-dots li button:hover {
+.front-page .slick-dots li button:hover {
   box-shadow: 0 0 0 3px #9c9c9c;
   transition: 0.2s;
 }
 
-.slick-dots .slick-active button {
+.front-page .slick-dots .slick-active button {
   background: #f9a02c;
   box-shadow: 0 0 0 5px #fff, 0 0 0 6px #b0b0b0;
 }
 
-.slick-dots .slick-active button:hover {
+.front-page .slick-dots .slick-active button:hover {
   background: #f9a02c;
   /* outline: 3px solid red; */
   box-shadow: 0 0 0 5px #fff, 0 0 0 6px #b0b0b0;
@@ -1367,4 +1367,41 @@ video {
     background-color: #fff;
     transform: none;
   }
+}
+
+/* Shop */
+.shop {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.shop img {
+  border: 2px solid #9f9f9f;
+}
+
+.shop select.orderby {
+  background-color: #f79e2a;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  padding: 1%;
+}
+
+.shop .woocommerce-loop-product__title {
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+}
+
+.shop span.price {
+  color: #00a99d;
+  font-size: 14px;
+}
+
+.shop a.button {
+  font-weight: bold;
+  background-color: #00a99d;
+  color: white;
+  border-radius: 20px;
+  margin: 0;
+  padding: 3% 3% 3% 3%;
 }
